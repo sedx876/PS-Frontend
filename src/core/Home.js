@@ -7,6 +7,7 @@ import rainHeart from '../images/rainHeart.png'
 const Home = () => {
   return (
     <div className='pinkGradient'>
+      <div className='pinkGradient'>
       <div class="center">
       <div class="property-card">
       <div class="property-image">
@@ -26,6 +27,8 @@ const Home = () => {
     </div>
   </div>
     </div>
+    </div>
+    
     
   )
 }

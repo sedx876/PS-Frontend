@@ -14,8 +14,8 @@ const Links = () => {
     <a href="" class="card">
       <img src={suicide} class="card__image" alt="" />
       <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+        <div class="card__header pinkGradient">
+          {/* <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      */}
           
           <div class="card__header-text">
             
@@ -30,8 +30,8 @@ const Links = () => {
     <a href="" class="card">
       <img src={trevor} class="card__image" alt="" />
       <div class="card__overlay">        
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+        <div class="card__header pinkGradient">
+          {/* <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> */}
           <div class="card__header-text">
            
           </div>
@@ -45,8 +45,8 @@ const Links = () => {
     <a href="" class="card">
       <img src={theCenter} class="card__image" alt="" />
       <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+        <div class="card__header pinkGradient">
+          {/* <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                      */}
           
           <div class="card__header-text">
 
@@ -61,8 +61,8 @@ const Links = () => {
     <a href="" class="card">
       <img src={timeOut} class="card__image" alt="" />
       <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+        <div class="card__header pinkGradient">
+          {/* <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                  */}
           
           <div class="card__header-text">
             

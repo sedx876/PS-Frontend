@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import '../styles/navbar.css'
-import thumb from '../images/thumb.png'
+import rainHeart from '../images/rainHeart.png'
 
 const Navbar = () => {
   return (
@@ -10,8 +10,9 @@ const Navbar = () => {
     <div class="nav-header">
     <div class="nav-title">
       <Link className='nav-title' to='/'>
-      <img className='thumbImg' src={thumb}/>
+      <img className='thumbImg' src={rainHeart}/>
       PrideSupport
+      <img className='thumbImg' src={rainHeart}/>
       </Link>
     </div>
     </div>

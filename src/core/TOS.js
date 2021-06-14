@@ -4,7 +4,7 @@ import '../styles/tos.css'
 const TOS = () => {
   return (
     <div className="pinkGradient tosBody">
-				<h2 className='tosTitle'>
+      <h2 className='tosTitle'>
 					<strong>PrideSupport Terms and Conditions</strong>
 				</h2>
 				<h5 className='tosSubTitles'>1. Introduction</h5>
@@ -149,7 +149,8 @@ const TOS = () => {
 					non-exclusive jurisdiction of the state and federal courts 
 					located in [State] for the resolution of any disputes.
 				</p>
-			</div>
+      </div>
+			
   )
 }
 

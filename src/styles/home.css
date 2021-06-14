@@ -1,7 +1,7 @@
 body
 {
-  background-image: var(--pinkGradient);
-  background-color: var(--lightPink);
+  /* background-image: var(--pinkGradient);
+  background-color: var(--lightPink); */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -27,7 +27,7 @@ p
 
 .center
 {
-  height:100vh;
+  height:80vh;
   width:100%;
   display: flex;
   justify-content: center;
