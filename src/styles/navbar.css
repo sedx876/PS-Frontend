@@ -4,20 +4,6 @@
 
 body {
   margin: 0px;
-  font-family: 'segoe ui';
-}
-
-.gradient {
-  background-image:
-    linear-gradient(
-      to right, 
-      #ff6698, 
-      #ffb366,
-      #ffff66, 
-      #98ff66,
-      #6698ff,
-      #A95AEC
-    );
 }
 
 .nav {
@@ -33,7 +19,7 @@ body {
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #53000E;
+  color: var(--darkPink);
   padding: 10px 10px 10px 10px;
 }
 
@@ -51,7 +37,7 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #53000E;
+  color: var(--darkPink);
 }
 
 .nav > .nav-links > a:hover {
