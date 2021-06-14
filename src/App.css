@@ -5,6 +5,12 @@
   --darkPink: #53000E;
   --lightPink: #FCE4EC;
   --medPink: #F8BBD0;
+  --pinkGradient: linear-gradient(to bottom, #F8BBD0, 
+  #F9C3D6,
+  #FACCDC, 
+  #FBD4E2,
+  #FBDDE8,
+  #FCE5ED)
 }
 
 .gradient {
@@ -35,4 +41,5 @@
 
 body{
   font-family: var(--mainFont);
+  background-image: var(--pinkGradient);
 }

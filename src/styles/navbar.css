@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   margin: 0px;
-}
+} */
 
 .nav {
   height: 50px;
@@ -30,7 +30,7 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .nav > .nav-links > a {

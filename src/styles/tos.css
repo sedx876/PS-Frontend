@@ -1,0 +1,15 @@
+.tosBody{
+  padding: 5px;
+}
+.tosTitle{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.tosSubTitles{
+  text-align: center;
+}
+
+.tosPara{
+  font-size: 15px;
+}
