@@ -20,6 +20,19 @@
     );
 }
 
+.pinkGradient {
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #F8BBD0, 
+      #F9C3D6,
+      #FACCDC, 
+      #FBD4E2,
+      #FBDDE8,
+      #FCE5ED
+    );
+}
+
 body{
   font-family: var(--mainFont);
 }

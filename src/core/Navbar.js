@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/navbar.css'
+import thumb from '../images/thumb.png'
 
 const Navbar = () => {
   return (
@@ -7,6 +8,7 @@ const Navbar = () => {
       <input type="checkbox" id="nav-check"/>
     <div class="nav-header">
     <div class="nav-title">
+      <img className='thumbImg' src={thumb}/>
       PrideSupport
     </div>
     </div>
