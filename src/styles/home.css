@@ -1,5 +1,6 @@
 body
 {
+  background-image: var(--pinkGradient);
   background-color: var(--lightPink);
   -webkit-font-smoothing: antialiased;
 }
@@ -78,7 +79,8 @@ p
 
 .property-description
 {
-  background-color: var(--medPink);
+  /* background-color: var(--medPink); */
+  background-image: var(--pinkGradient);
   height:15em;
   width:35em;
   position:absolute;
@@ -97,17 +99,25 @@ p
 
 /* Property Cards Hover States */
 
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
-}
+
 .property-card:hover .property-image
 {
   height:18em;
 }
 
+.rainHeart{
+  height: 25px;
+  width: 25px;
+}
 
+.signupLink{
+  text-decoration: none;
+  color: var(--darkPink);
+}
+
+.homePara{
+  color: var(--darkPink);
+}
 
 
 /* Optional
