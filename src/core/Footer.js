@@ -27,7 +27,7 @@ const Footer = () => {
         </li>
 
         <li className='footerLinks'>
-          <Link className='footerLinks' to='/tos'>
+          <Link className='footerLinks' to='/about'>
             About
           </Link>
         </li>

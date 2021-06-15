@@ -43,7 +43,12 @@ const Navbar = ({history}) => {
       <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
       <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
       <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Profile</a>
-      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Log Out</a>
+
+      <span className="nav-link" 
+      style={{ cursor: 'pointer', color: '#53000E' }} 
+      onClick={() => signout(() => history.push('/'))}>
+      Log Out 
+    </span>
     </div>
   </div>
   )

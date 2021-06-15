@@ -60,7 +60,7 @@ p
 
 /* Top Half of card, image. */
 
-.property-image
+.property-image2
 {
   height:25em;
   width:35em;
@@ -70,7 +70,7 @@ p
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image:url('../images/side.jpg');
+  background-image:url('../images/side2.jpg');
   background-size:cover;
   background-repeat:no-repeat;
 }
@@ -100,7 +100,7 @@ p
 /* Property Cards Hover States */
 
 
-.property-card:hover .property-image
+.property-card:hover .property-image2
 {
   height:18em;
 }

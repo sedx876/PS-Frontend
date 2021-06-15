@@ -86,7 +86,7 @@ class Signin extends Component{
   render(){
     const { email, password, error, redirectToReferer, loading } = this.state
     if (redirectToReferer) {
-      return <Redirect to="/" />;
+      return <Redirect to="/about" />;
     }
     return(
       <div className='container'>

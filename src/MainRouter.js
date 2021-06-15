@@ -7,6 +7,7 @@ import TOS from './core/TOS'
 import Links from './core/Links'
 import Signup from './user/Signup'
 import Signin from './user/Signin'
+import About from './core/About'
 
 const MainRouter = () => {
   return (
@@ -18,6 +19,7 @@ const MainRouter = () => {
         <Route path='/links' component={Links}/>
         <Route exact path='/signup' component={Signup}/>
         <Route exact path='/signin' component={Signin}/>
+        <Route path='/about' component={About}/>
       </Switch>
       <Footer/>
     </div>
