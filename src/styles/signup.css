@@ -191,3 +191,11 @@ button:hover {
         transform: translateY(5px);
     }
 }
+
+.text-danger{
+    margin-left: 45%;
+    /* margin-right: 50%; */
+    text-align: center;
+    text-decoration: none;
+    color: var(--darkPink);
+}

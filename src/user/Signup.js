@@ -82,7 +82,7 @@ class Signup extends Component{
    <div class="other">
 
       <button class="btn submits frgt-pass">
-        <Link to='/'>Cancel Registration</Link>
+        <Link to='/signin'>Member LogIn</Link>
         </button>
    </div>
   </div>

@@ -1,9 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
+import { signout, isAuthenticated } from '../auth'
 import '../styles/navbar.css'
 import rainHeart from '../images/rainHeart.png'
 
-const Navbar = () => {
+const isActive = (history, path) => {
+  if (history.location.pathname === path) return { color: '#53000E' };
+  else return { color: '#53000E' };
+}
+
+const Navbar = ({history}) => {
   return (
     <div class="nav gradient">
       <input type="checkbox" id="nav-check"/>
@@ -25,8 +31,14 @@ const Navbar = () => {
     </div>
   
     <div class="nav-links">
-      <a href="//github.io/jo_geek" target="_blank">LogIn</a>
-      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Register</a>
+    <Link className="nav-link" style={isActive(history, '/signin')} to="/signin">
+        Log In
+      </Link>
+
+      <Link className="nav-link" style={isActive(history, '/signup')} to="/signup">
+        Register
+      </Link>
+
       <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Member Directory</a>
       <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
       <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
@@ -37,4 +49,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default withRouter(Navbar)

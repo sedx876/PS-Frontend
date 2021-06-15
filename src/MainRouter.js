@@ -6,6 +6,7 @@ import Home from './core/Home'
 import TOS from './core/TOS'
 import Links from './core/Links'
 import Signup from './user/Signup'
+import Signin from './user/Signin'
 
 const MainRouter = () => {
   return (
@@ -15,7 +16,8 @@ const MainRouter = () => {
         <Route exact path='/' component={Home}/>
         <Route path='/tos' component={TOS}/>
         <Route path='/links' component={Links}/>
-        <Route path='/signup' component={Signup}/>
+        <Route exact path='/signup' component={Signup}/>
+        <Route exact path='/signin' component={Signin}/>
       </Switch>
       <Footer/>
     </div>
