@@ -1,0 +1,27 @@
+button{
+  margin: 10px 0 40px 0;
+  background: var(--lightPink);
+  border: 1px solid var(--darkPink);
+}
+.msg-btn, .follow-btn{
+  background: var(--medPink);
+  border: 1px solid var(--darkPink);
+  padding: 10px 25px;
+  color: var(--darkPink);
+  border-radius: 3px;
+  /* font-family: Montserrat, sans-serif; */
+  cursor: pointer;
+}
+.follow-btn{
+  background: var(--medPink);
+  margin-left: 10px;
+  /* background: transparent; */
+  color: var(--darkPink);
+}
+.follow-btn:hover{
+  color: var(--darkPink);
+  background: var(--medPink);
+  transition: .5s;
+}
+
+

@@ -31,30 +31,52 @@ const Navbar = ({history}) => {
     </div>
   
     <div class="nav-links">
-    <Link className="nav-link" style={isActive(history, '/signin')} to="/signin">
-        Log In
-      </Link>
-
-      <Link className="nav-link" style={isActive(history, '/signup')} to="/signup">
-        Register
-      </Link>
-
-      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Member Directory</a>
-      <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
-      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
-
-      <span className="nav-link">
-        <Link to={`/user/${isAuthenticated().user._id}`}
-          style={(isActive(history, `/user/${isAuthenticated().user._id}`))}>
-          {`${isAuthenticated().user.name} Profile`} 
+      {!isAuthenticated() && (
+        <>
+        <Link className="nav-link" style={isActive(history, '/signin')} to="/signin">
+          Log In
         </Link>
-      </span>
 
-      <span className="nav-link" 
-      style={{ cursor: 'pointer', color: '#53000E' }} 
-      onClick={() => signout(() => history.push('/'))}>
-      Log Out 
-    </span>
+        <Link className="nav-link" style={isActive(history, '/signup')} to="/signup">
+          Register
+        </Link>
+        </>
+      )}
+
+      {isAuthenticated() && 
+        <>
+        <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Member Directory</a>
+        <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
+        <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
+
+        <span className="nav-link">
+          <Link to={`/user/${isAuthenticated().user._id}`}
+            style={(isActive(history, `/user/${isAuthenticated().user._id}`))}>
+            {`${isAuthenticated().user.name} Profile`} 
+          </Link>
+        </span>
+        
+        
+        
+        
+        <span
+          style={{margin: '5px'}}
+          onClick={() => signout(() => history.push('/'))}>
+          Log Out 
+        </span>
+        </>
+      }
+
+
+
+
+      
+
+      
+
+     
+
+      
     </div>
   </div>
   )

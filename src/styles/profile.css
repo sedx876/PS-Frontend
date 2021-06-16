@@ -1,31 +1,34 @@
-body{
-  font-family: Montserrat, sans-serif;
-  background: #28223f;
+.profDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container{
   user-select: none;
-  margin: 100px auto;
-  background: #231e39;
-  color: #b3b8cd;
+  /* margin: 100px auto; */
+  margin: 10px;
+  background-color: var(--medPink);
+  color: var(--darkPink);
   border-radius: 5px;
   width: 350px;
   text-align: center;
   box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
 }
 .cover-photo{
-  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background: url('../images/abstract.jpg');
   height: 160px;
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
 .profile{
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  margin: 93px 0 0 -175px;
-  border: 1px solid #1f1a32;
-  padding: 7px;
-  background: #292343;
+  margin: 75px 0 0 -150px;
+  border: .25px solid var(--darkPink);
+  padding: 2px;
+  background: var(--darkPink);
+  object-fit: fill;
 }
 .profile-name{
   font-size: 25px;
@@ -38,24 +41,25 @@ body{
 }
 button{
   margin: 10px 0 40px 0;
+  background-color: var(--lightPink);
 }
 .msg-btn, .follow-btn{
-  background: #03bfbc;
-  border: 1px solid #03bfbc;
+  background-color: var(--lightPink);
+  border: 1px solid var(--darkPink);
   padding: 10px 25px;
-  color: #231e39;
+  color: var(--darkPink);
   border-radius: 3px;
-  font-family: Montserrat, sans-serif;
+  /* font-family: Montserrat, sans-serif; */
   cursor: pointer;
 }
 .follow-btn{
   margin-left: 10px;
-  background: transparent;
-  color: #02899c;
+  background-color: var(--lightPink);
+  color: var(--darkPink);
 }
 .follow-btn:hover{
-  color: #231e39;
-  background: #03bfbc;
+  color: var(--darkPink);
+  background-color: var(--lightPink);
   transition: .5s;
 }
 .container i{
@@ -66,5 +70,48 @@ button{
   transition: .5s;
 }
 .container i:hover{
-  color: #03bfbc;
+  background-color: var(--lightPink);
+}
+
+
+.profileHead{
+  text-align: center;
+}
+
+
+/* ABOUT ME */
+.aboutMe{
+  background-color: var(--medPink);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  border-style: solid;
+}
+
+.aboutPara{
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* ADMIN DIV */
+.adminDiv{
+  background-color: var(--medPink);
+  margin: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  border-style: solid;
+  text-align: center;
+}
+
+.adminEditBtn{
+  background-color: var(--lightPink);
+  border: 1px solid var(--darkPink);
+  padding: 10px 25px;
+  color: var(--darkPink);
+  border-radius: 3px;
+  /* font-family: Montserrat, sans-serif; */
+  cursor: pointer;
+  margin: 5px;
 }
