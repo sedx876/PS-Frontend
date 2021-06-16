@@ -5,8 +5,58 @@ const TOS = () => {
   return (
     <div className="pinkGradient tosBody">
       <h2 className='tosTitle'>
-					<strong>PrideSupport Terms and Conditions</strong>
-				</h2>
+				<strong>PrideSupport Terms, Conditions and Rules</strong>
+			</h2>
+
+				<h5 className='tosSubTitles'>The Rules</h5>
+				<ul className='tosPara'>
+					<li>
+						<strong>NO </strong> 
+						Bullying
+					</li>
+
+					<li>
+						<strong>NO </strong> 
+						Trolling
+					</li>
+
+					<li>
+						<strong>NO </strong> 
+						Hate Speech
+					</li>
+
+					<li>
+						<strong>NO </strong> 
+						Sexually Explicit Material is Allowed
+					</li>
+
+					<li>
+						<strong>NO </strong> 
+						Talk of Illegal Activity
+					</li>
+
+					<li>
+						<strong>YES </strong> 
+						Be The Absolute Best Version of Yourself
+					</li>
+
+					<li>
+						<strong>YES </strong> 
+						Reach Out and Make the Difference for Someone Else
+					</li>
+
+					<li>
+						<strong>YES </strong> 
+						Be A Shining Example of Support, Love and Acceptance
+					</li>
+
+					<li>
+						<strong>YES </strong> 
+						Share Your Story and Experiences w/ Others
+					</li>
+
+				</ul>
+				<br/>
 				<h5 className='tosSubTitles'>1. Introduction</h5>
 				<p className='tosPara'>These Website Standard Terms And Conditions (these “Terms” or 
 					these “Website Standard Terms And Conditions”) contained herein 
@@ -22,6 +72,7 @@ const TOS = () => {
 				<p className='tosPara'>This Website is not for use by any persons under the age of 13 , 
 					and you must not use this if under the age of 13.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>2. Intellectual Property Rights</h5>
 				<p className='tosPara'>Other than content you own, which you may have opted to include 
@@ -32,6 +83,7 @@ const TOS = () => {
 					in these Terms, for purposes of viewing the material contained on this 
 					Website.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>3. Restrictions</h5>
 				<p className='tosPara'><strong>You are expressly and emphatically restricted from all 
@@ -67,6 +119,7 @@ const TOS = () => {
 					this Website are confidential and you must maintain 
 					confidentiality of such information.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>4. Your Content</h5>
 				<p className='tosPara'>In these Website Standard Terms And Conditions, 
@@ -83,6 +136,7 @@ const TOS = () => {
 					remove any of Your Content from this Website at any time, and 
 					for any reason, without notice.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>5. No Warranties</h5>
 				<p className='tosPara'>This Website is provided “as is,” with all faults, 
@@ -92,6 +146,7 @@ const TOS = () => {
 					contained on this Website shall be construed as providing 
 					consult or advice to you.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>6. Limitation of Liability</h5>
 				<p className='tosPara'>In no event shall PrideSupport , nor any of its officers, 
@@ -103,6 +158,7 @@ const TOS = () => {
 					special liability arising out of or in any way related to your 
 					use of this Website.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>7. Indemnification</h5>
 				<p className='tosPara'>You hereby indemnify to the fullest extent [Sender.Company] from 
@@ -111,6 +167,7 @@ const TOS = () => {
 					attorney’s fees) arising out of or in any way related to your 
 					breach of any of the provisions of these Terms.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>8. Severability</h5>
 				<p className='tosPara'>If any provision of these Terms is found to be unenforceable or 
@@ -119,6 +176,7 @@ const TOS = () => {
 					as a whole, and such provisions shall be deleted without affecting 
 					the remaining provisions herein.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>9. Variation of Terms</h5>
 				<p className='tosPara'>PrideSupport is permitted to revise these Terms at any time 
@@ -126,6 +184,7 @@ const TOS = () => {
 					review such Terms on a regular basis to ensure you understand all 
 					terms and conditions governing use of this Website.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>10. Assignment</h5>
 				<p className='tosPara'>PrideSupport shall be permitted to assign, transfer, and 
@@ -134,6 +193,7 @@ const TOS = () => {
 					not be permitted to assign, transfer, or subcontract any of your 
 					rights and/or obligations under these Terms.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>11. Entire Agreement</h5>
 				<p className='tosPara'>These Terms, including any legal notices and disclaimers 
@@ -142,12 +202,13 @@ const TOS = () => {
 					Website, and supersede all prior agreements and understandings 
 					with respect to the same.
 				</p>
+				<br/>
 
 				<h5 className='tosSubTitles'>12. Governing Law & Jurisdiction</h5>
 				<p className='tosPara'>These Terms will be governed by and construed in accordance with 
-					the laws of the State of [State], and you submit to the 
+					the laws of the State of Pennsylvania, and you submit to the 
 					non-exclusive jurisdiction of the state and federal courts 
-					located in [State] for the resolution of any disputes.
+					located in Pennsylvania for the resolution of any disputes.
 				</p>
       </div>
 			

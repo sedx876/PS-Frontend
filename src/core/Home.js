@@ -16,8 +16,13 @@ const Home = () => {
         </div>
       </div>
       <div class="property-description">
-        <img className='rainHeart' src={rainHeart}/>
+        {/* <img className='rainHeart' src={rainHeart}/> */}
         <h5>Welcome to PrideSupport</h5>
+        <h3>
+          <img className='rainHeart' src={rainHeart}/>
+          You Are Supported Here
+          <img className='rainHeart' src={rainHeart}/>
+        </h3>
         <p className='homePara'>A Safe Social Space for LGBTQ+ Youth</p>
         <br/><br/>
         <Link className='signupLink' to='/signup'>Not A Member Yet? SignUp Here!</Link>

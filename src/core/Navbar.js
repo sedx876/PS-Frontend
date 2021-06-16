@@ -42,7 +42,13 @@ const Navbar = ({history}) => {
       <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Member Directory</a>
       <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
       <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
-      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Profile</a>
+
+      <span className="nav-link">
+        <Link to={`/user/${isAuthenticated().user._id}`}
+          style={(isActive(history, `/user/${isAuthenticated().user._id}`))}>
+          {`${isAuthenticated().user.name} Profile`} 
+        </Link>
+      </span>
 
       <span className="nav-link" 
       style={{ cursor: 'pointer', color: '#53000E' }} 
