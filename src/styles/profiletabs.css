@@ -1,0 +1,49 @@
+.tabsDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+.tabsHeader{
+  text-align: center;
+}
+
+.followersDiv{
+  background-color: var(--medPink);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  border-style: solid;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.tabsPara{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+hr{
+  height: 1px;
+  background-color: var(--darkPink);
+  border: none;
+}
+
+.lead{
+  text-decoration: none;
+  color: var(--darkPink);
+}
+
+.lead > Link{
+  text-decoration: none;
+  color: var(--darkPink);
+}

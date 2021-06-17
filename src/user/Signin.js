@@ -73,12 +73,14 @@ class Signin extends Component{
     <button class="log-in" onClick={this.clickSubmit}> Log In </button>
  </div>
  <div class="other">
-
-    <button class="btn submits frgt-pass">
-      <Link to='/signup'>Not A Member Yet?</Link>
-      </button>
+      
  </div>
 </div>
+<Link 
+  class="btn submits frgt-pass" 
+  to='/signup'>
+    Not A Member Yet?
+</Link>
 </form>
 </div>
   )
@@ -89,7 +91,7 @@ class Signin extends Component{
       return <Redirect to="/about" />;
     }
     return(
-      <div className='container'>
+      <div>
         
       <div 
         className='alert alert-danger'

@@ -81,11 +81,16 @@ class Signup extends Component{
    </div>
    <div class="other">
 
-      <button class="btn submits frgt-pass">
-        <Link to='/signin'>Member LogIn</Link>
-        </button>
+      {/* <button class="btn submits frgt-pass"> */}
+        
+        {/* </button> */}
    </div>
   </div>
+  <Link
+    class="btn submits frgt-pass" 
+    to='/signin'>
+      Member LogIn
+  </Link>
 </form>
 </div>
   )
@@ -93,7 +98,7 @@ class Signup extends Component{
   render(){
     const { name, email, password, error, open } = this.state
     return(
-      <div className='container'>
+      <div>
       <div 
         className='alert alert-danger'
         style={{ display: error ? '' : 'none'}}>

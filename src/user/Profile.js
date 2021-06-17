@@ -9,6 +9,7 @@ import FollowProfileButton from "./FollowProfileButton"
 import DeleteUser from "./DeleteUser"
 import rainHeart from '../images/rainHeart.png'
 import abstract from '../images/abstract.jpg'
+import ProfileTabs from "./ProfileTabs"
 
 
 class Profile extends Component {
@@ -165,6 +166,16 @@ class Profile extends Component {
         ) :(
           <div className='noDiv'>NO</div>
         )}
+
+        
+          
+            <ProfileTabs
+              followers={user.followers}
+              following={user.following}
+              posts={posts}
+            />
+            
+        
 
       <div className='adminDiv'>
           {isAuthenticated().user && 
