@@ -6,6 +6,7 @@ import { read } from "./apiUser"
 import { listByUser } from "../post/apiPost"
 import DefaultProfile from "../images/gaycat.png"
 import FollowProfileButton from "./FollowProfileButton"
+import DeleteUser from "./DeleteUser"
 import rainHeart from '../images/rainHeart.png'
 import abstract from '../images/abstract.jpg'
 
@@ -142,25 +143,52 @@ class Profile extends Component {
 
       </div>
 
+      {isAuthenticated().user &&
+        isAuthenticated().user._id === user._id ? (
+          <div className='btnDiv'>
+
+            <button className="createPostBtn">
+              <Link to={`/post/create`}></Link>
+                Create Post
+            </button>
+
+            <DeleteUser userId={user._id} />
+
+            <button className="createPostBtn">
+              <Link to={`/user/edit/${user._id}`}></Link>
+                Edit Post
+            </button>
+
+            
+            
+          </div>
+        ) :(
+          <div className='noDiv'>NO</div>
+        )}
+
       <div className='adminDiv'>
           {isAuthenticated().user && 
-          isAuthenticated().user.role === "admin" && (
+          isAuthenticated().user.role === "admin" ? (
             <div class="">
               <div className="">
                 <h5 className="">Admin</h5>
                 <p className="">
                   Edit/Delete as an Admin
                 </p>
+                <button className="adminEditBtn">
                 <Link
-                  className="adminEditBtn"
                   to={`/user/edit/${user._id}`}
-                >
-                  Edit Profile
+                > 
                 </Link>
-                {/* <DeleteUser /> */}
+                Edit Profile
+                </button>
+                
+                <DeleteUser />
               </div>
             </div>
             
+            ): (
+              <div className='noDiv'>NO</div>
             )}
             </div>
       </>
