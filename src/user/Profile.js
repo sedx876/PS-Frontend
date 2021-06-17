@@ -149,15 +149,15 @@ class Profile extends Component {
           <div className='btnDiv'>
 
             <button className="createPostBtn">
-              <Link to={`/post/create`}></Link>
-                Create Post
+              <Link to={`/post/create`}>Create Post</Link>
+                
             </button>
 
             <DeleteUser userId={user._id} />
 
             <button className="createPostBtn">
-              <Link to={`/user/edit/${user._id}`}></Link>
-                Edit Post
+              <Link to={`/user/edit/${user._id}`}>Edit Profile</Link>
+                
             </button>
 
             

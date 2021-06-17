@@ -42,5 +42,6 @@
 body{
   font-family: var(--mainFont);
   background-image: var(--pinkGradient);
+  
 }
 
