@@ -186,13 +186,13 @@ class Profile extends Component {
                 <p className="">
                   Edit/Delete as an Admin
                 </p>
-                <button className="adminEditBtn">
-                <Link
+                
+                <Link className='createPostBtn'
                   to={`/user/edit/${user._id}`}
-                > 
+                > Edit Profile
                 </Link>
-                Edit Profile
-                </button>
+                
+                
                 
                 <DeleteUser />
               </div>

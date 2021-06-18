@@ -1,12 +1,13 @@
 import React, { Component } from "react"
-import Posts from "../post/Posts"
+// import Posts from "../post/Posts"
 import Users from "../user/Users"
 import { isAuthenticated } from "../auth"
 import { Redirect } from "react-router-dom"
 
 class Admin extends Component {
   state = {
-    redirectToHome: false
+    redirectToHome: false,
+    
   }
 
   componentDidMount() {
@@ -19,18 +20,19 @@ class Admin extends Component {
     if (this.state.redirectToHome) {
       return <Redirect to="/" />;
     }
+    
     return (
       <div>
-        <div className="jumbotron">
+        <div className="profileHead">
           <h2>Admin Dashboard</h2>
-          <p className="lead">Welcome to React Frontend</p>
+          <p className="lead">Posts and Users</p>
         </div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
               <h2>Posts</h2>
               <hr />
-              <Posts />
+              {/* <Posts /> */}
             </div>
             <div className="col-md-6">
               <h2>Users</h2>

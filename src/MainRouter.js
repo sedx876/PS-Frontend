@@ -11,6 +11,8 @@ import Signin from './user/Signin'
 import About from './core/About'
 import Profile from './user/Profile'
 import EditProfile from './user/EditProfile'
+import Users from './user/Users'
+import Admin from './admin/Admin'
 
 const MainRouter = () => {
   return (
@@ -24,7 +26,9 @@ const MainRouter = () => {
         <Route exact path='/signin' component={Signin}/>
         <Route path='/about' component={About}/>
         <PrivateRoute exact path='/user/:userId' component={Profile}/>
+        <Route exact path='/users' component={Users}/>
         <PrivateRoute exact path='/user/edit/:userId' component={EditProfile}/>
+        <Route path='/admin' component={Admin}/>
       </Switch>
       <Footer/>
     </div>

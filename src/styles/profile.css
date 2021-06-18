@@ -34,7 +34,7 @@
   margin: 75px 0 0 -180px;
   border: .25px solid var(--darkPink);
   padding: 2px;
-  background: var(--darkPink);
+  background: var(--lightPink);
   /* object-fit: fill; */
 }
 .profile-name{

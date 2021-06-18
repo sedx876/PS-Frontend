@@ -45,7 +45,10 @@ const Navbar = ({history}) => {
 
       {isAuthenticated() && 
         <>
-        <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Member Directory</a>
+        <Link className="nav-link" style={isActive(history, '/users')} to="/users">
+          Members Directory
+        </Link>
+        
         <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
         <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
 
