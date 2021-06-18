@@ -12,6 +12,7 @@ import About from './core/About'
 import Profile from './user/Profile'
 import EditProfile from './user/EditProfile'
 import Users from './user/Users'
+import Posts from './post/Posts'
 import Admin from './admin/Admin'
 
 const MainRouter = () => {
@@ -27,6 +28,7 @@ const MainRouter = () => {
         <Route path='/about' component={About}/>
         <PrivateRoute exact path='/user/:userId' component={Profile}/>
         <Route exact path='/users' component={Users}/>
+        <Route path='/posts' component={Posts}/>
         <PrivateRoute exact path='/user/edit/:userId' component={EditProfile}/>
         <Route path='/admin' component={Admin}/>
       </Switch>

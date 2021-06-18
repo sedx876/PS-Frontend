@@ -48,8 +48,9 @@ const Navbar = ({history}) => {
         <Link className="nav-link" style={isActive(history, '/users')} to="/users">
           Members Directory
         </Link>
+
+        <Link to='/posts'>Post Feed</Link>
         
-        <a href="https://codepen.io/jo_Geek/" target="_blank">Post Feed</a>
         <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Create Post</a>
 
         <span className="nav-link">
