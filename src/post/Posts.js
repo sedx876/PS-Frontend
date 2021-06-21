@@ -102,7 +102,7 @@ class Posts extends Component {
             {this.renderPosts(posts)}
               {page > 1 ? (
               <button
-                className=""
+                className="createPostBtn"
                 onClick={() => this.loadLess(1)}
               >
                 Previous ({this.state.page - 1})
@@ -112,7 +112,7 @@ class Posts extends Component {
               )}
                 {posts.length ? (
                   <button
-                    className=""
+                    className="createPostBtn"
                     onClick={() => this.loadMore(1)}
                   >
                     Next ({page + 1})

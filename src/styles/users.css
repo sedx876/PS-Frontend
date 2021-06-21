@@ -9,8 +9,8 @@
 
 .container2{
   user-select: none;
-  /* margin: 100px auto; */
-  margin: 10px;
+  margin: 100px auto;
+  /* margin: 10px; */
   background-color: var(--medPink);
   color: var(--darkPink);
   border-radius: 5px;
@@ -29,4 +29,8 @@
   padding: 2px;
   background: var(--lightPink);
   /* object-fit: fill; */
+}
+
+.nameTitle{
+  letter-spacing: 2px;
 }

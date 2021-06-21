@@ -14,6 +14,7 @@ import EditProfile from './user/EditProfile'
 import Users from './user/Users'
 import Posts from './post/Posts'
 import Admin from './admin/Admin'
+import SinglePost from "./post/SinglePost"
 
 const MainRouter = () => {
   return (
@@ -31,6 +32,7 @@ const MainRouter = () => {
         <Route path='/posts' component={Posts}/>
         <PrivateRoute exact path='/user/edit/:userId' component={EditProfile}/>
         <Route path='/admin' component={Admin}/>
+        <Route exact path="/post/:postId" component={SinglePost} />
       </Switch>
       <Footer/>
     </div>

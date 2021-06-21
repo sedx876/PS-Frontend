@@ -37,9 +37,10 @@ class Users extends Component {
              alt={user.name}
            />
           </div>
-          <div class="profile-name">{user.name}</div>
+          {/* <div class="profile-name">{user.name}</div> */}
           <br/>
           <p>
+          <div class="nameTitle"><h4>{user.name}</h4></div>
            <strong>Joined: </strong> 
            {`${new Date(user.created).toDateString()}`}
          </p>
@@ -55,28 +56,7 @@ class Users extends Component {
       ))}
     </div>
 
-    // <div class="container">
-    //     <div class="cover-photo">
-    //       <img src={photoUrl} 
-    //         class="profile"
-    //         onError={i => (i.target.src = `${DefaultProfile}`)}
-    //         alt={user.name}
-    //       />
-    //     </div>
-    //     <div class="profile-name">{user.name}</div>
-    //     <br/>
-    //     <p>
-    //       <strong>Joined: </strong> 
-    //       {`${new Date(user.created).toDateString()}`}
-    //     </p>
-    //     {/* <button class="msg-btn">Message</button> */}
-        
-        
-    //     {/* <FollowProfileButton
-    //             following={this.state.following}
-    //             onButtonClick={this.clickFollowButton}
-    //           /> */}
-    //   </div>
+   
       
   )
 
@@ -84,7 +64,7 @@ class Users extends Component {
     const {users} = this.state
     return (
       <div className=''>
-        <h2 className=''>
+        <h2 className='profileHead'>
           <strong>Members Directory</strong>
         </h2>
         {this.renderUsers(users)}

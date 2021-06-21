@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { comment, uncomment } from "./apiPost"
 import { isAuthenticated } from "../auth"
 import { Link } from "react-router-dom"
-import DefaultProfile from "../images/avatar.jpg"
+import DefaultProfile from "../images/gaycat.png"
 
 class Comment extends Component {
   state = {
@@ -78,18 +78,18 @@ class Comment extends Component {
     const { error } = this.state
     return (
       <div>
-        <h2 className="mt-5 mb-5">Leave a comment</h2>
+        <h2 className="">Leave a comment</h2>
         <form onSubmit={this.addComment}>
-          <div className="form-group">
+          <div className="">
             <input
               type="text"
               onChange={this.handleChange}
               value={this.state.text}
-              className="form-control"
+              className=""
               placeholder="Leave a comment..."
             />
-            <button className="btn btn-raised btn-success mt-2">
-              Post
+            <button className="creatPostBtn">
+              Post Comment
             </button>
           </div>
         </form>
@@ -105,7 +105,7 @@ class Comment extends Component {
           <hr />
           {comments.map((comment, i) => (
         <div key={i}>
-          <div>
+          <div className='postPara'>
             <Link to={`/user/${comment.postedBy._id}`}>
               <img
                 style={{
@@ -125,7 +125,8 @@ class Comment extends Component {
               />
             </Link>
             <div>
-              <p className="lead">{comment.text}</p>
+              <div className=''><p className="aboutPara">{comment.text}</p></div>
+              
               <p className="font-italic mark">
                 Posted by{" "}
               <Link
@@ -142,6 +143,7 @@ class Comment extends Component {
                     isAuthenticated().user._id ===
                     comment.postedBy._id && (
                 <>
+                <br/>
                   <button className='btn btn-raised btn-outline-danger btn-sm float-right mr-1'
                     onClick={() =>
                     this.deleteConfirmed(comment)}>
